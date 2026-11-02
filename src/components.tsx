@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type PropsWithChildren } from "react";
+import { assetUrl } from "./utils/assetUrl";
 
 export function Mark({ small = false }: { small?: boolean }) {
   return (
@@ -53,7 +54,7 @@ export function PhotoSlot({
   priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
-  const source = `/assets/${asset}`;
+  const source = assetUrl(`/assets/${asset}`);
 
   return (
     <div className={`photo-slot ${className}${failed ? " photo-slot--fallback" : ""}`}>

@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight, Flame, HeartHandshake, Leaf, Coffee } from "lucide-react";
 import { SectionHeading } from "../common/SectionHeading";
+import { assetUrl } from "../../utils/assetUrl";
 
 export const BrandStory: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const BrandStory: React.FC = () => {
           <div className="story-visual-wrap">
             <div className="story-image-card">
               <img
-                src="/assets/restaurant/interior-patio.webp"
+                src={assetUrl("/assets/restaurant/interior-patio.webp")}
                 alt="Dining Room and Thindi Coffee House Patio at The Oota Thindi, Borivali West"
                 width="1360"
                 height="766"

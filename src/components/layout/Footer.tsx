@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowUp, Compass } from "lucide-react";
 import { restaurantData } from "../../data/restaurant";
+import { assetUrl } from "../../utils/assetUrl";
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -43,7 +44,7 @@ export const Footer: React.FC = () => {
           <div className="footer-col">
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
               <img
-                src="/assets/brand/logo-small.jpg"
+                src={assetUrl("/assets/brand/logo-small.jpg")}
                 alt="The Oota Thindi"
                 width="160"
                 height="200"

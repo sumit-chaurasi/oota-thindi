@@ -1,4 +1,5 @@
 import { MenuCategory, MenuItem } from "../types";
+import { assetUrl } from "../utils/assetUrl";
 
 export const menuCategories: MenuCategory[] = [
   {
@@ -8,7 +9,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Crisp, fermented rice-and-lentil crepes griddled to golden perfection. Includes Davangere butter specials, podi drizzles, and Mysore roasts.",
     servingNote: "All dosas served with signature coconut chutney, tomato-onion chutney, and drumstick sambar.",
-    coverImage: "/assets/food/benne-dosa.jpg",
+    coverImage: assetUrl("/assets/food/benne-dosa.jpg"),
   },
   {
     id: "rava-dosa",
@@ -17,7 +18,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Lacy, golden semolina crepes infused with cumin, ginger, and curry leaves. Exceptionally crisp and light.",
     servingNote: "Served fresh from the cast-iron skillet with tri-chutney platter and sambar.",
-    coverImage: "/assets/food/cone-dosa.jpg",
+    coverImage: assetUrl("/assets/food/cone-dosa.jpg"),
   },
   {
     id: "combo-meals",
@@ -26,7 +27,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Hearty Dakshin comfort meals including Appam with vegetable stew, Puttu with Kadala curry, Nei Chor, and Royal Thalis.",
     servingNote: "All meals served with bhaji, appalam, and homemade lemon/mango pickle.",
-    coverImage: "/assets/food/south-indian-thali.webp",
+    coverImage: assetUrl("/assets/food/south-indian-thali.webp"),
   },
   {
     id: "chettinad",
@@ -35,7 +36,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Robust, freshly roasted spice blends from the culinary heartland of Tamil Nadu. Featuring flaky Bun Parottas and string hoppers.",
     servingNote: "Served with fragrant vegetable salan, kurma, and fresh coconut milk.",
-    coverImage: "/assets/food/grand-feast-spread.jpg",
+    coverImage: assetUrl("/assets/food/grand-feast-spread.jpg"),
   },
   {
     id: "biryani",
@@ -44,7 +45,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Fragrant short-grain Seeraga Samba and spice-roasted biryanis cooked with tender jackfruit, Coorg raw banana, and mushrooms.",
     servingNote: "All biryanis served with tempered onion pachadi raita and aromatic salan.",
-    coverImage: "/assets/food/royal-sadhya-thali.jpg",
+    coverImage: assetUrl("/assets/food/royal-sadhya-thali.jpg"),
   },
   {
     id: "sweets",
@@ -53,7 +54,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Traditional South Indian festive desserts cooked with pure country ghee, jaggery, cardamom, and roasted dry fruits.",
     servingNote: "Prepared daily in traditional brass urulis and clay earthenware.",
-    coverImage: "/assets/food/semiya-payasam.jpg",
+    coverImage: assetUrl("/assets/food/semiya-payasam.jpg"),
   },
   {
     id: "cold-beverages",
@@ -62,7 +63,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Cooling coastal Indian refreshments made from wild sarsaparilla, curd whey, rose essence, and cold-pressed filter brews.",
     servingNote: "Chilled and served fresh to order.",
-    coverImage: "/assets/food/urulai-potato-roast.jpg",
+    coverImage: assetUrl("/assets/food/urulai-potato-roast.jpg"),
   },
   {
     id: "hot-beverages",
@@ -71,7 +72,7 @@ export const menuCategories: MenuCategory[] = [
     description:
       "Heritage Chikmagalur coffee beans roasted dark with chicory, slow-dripped in brass filters, and frothed in traditional davarahs.",
     servingNote: "Served piping hot in hammered brass davarah-tumbler sets.",
-    coverImage: "/assets/restaurant/interior-patio.webp",
+    coverImage: assetUrl("/assets/restaurant/interior-patio.webp"),
   },
 ];
 
@@ -88,7 +89,7 @@ export const menuItems: MenuItem[] = [
     isJain: false,
     isSignature: true,
     isChefSpecial: true,
-    image: "/assets/food/benne-dosa.jpg",
+    image: assetUrl("/assets/food/benne-dosa.jpg"),
     serving: "Served with white coconut chutney, spicy red chutney & piping drumstick sambar",
     badge: "House Signature",
   },
@@ -101,7 +102,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Thin, golden rice and lentil dosa, soft to perfection and served plain to let the flavours shine.",
     isJain: true,
-    image: "/assets/food/cone-dosa.jpg",
+    image: assetUrl("/assets/food/cone-dosa.jpg"),
     serving: "Served with Chutney and Sambar",
   },
   {
@@ -125,7 +126,7 @@ export const menuItems: MenuItem[] = [
       "Crisp cone-shaped roast roasted with pure melted desi ghee until deeply fragrant and aromatic.",
     isJain: true,
     isSignature: true,
-    image: "/assets/food/cone-dosa.jpg",
+    image: assetUrl("/assets/food/cone-dosa.jpg"),
     serving: "Served with Chutney and Sambar",
     badge: "Crowd Favorite",
   },
@@ -174,7 +175,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Crispy rice and lentil dosa rolled and filled with comforting, tempered spiced potato masala.",
     isJain: false,
-    image: "/assets/food/masala-dosa-roll.jpg",
+    image: assetUrl("/assets/food/masala-dosa-roll.jpg"),
     serving: "Served with Chutney and Sambar",
   },
   {
@@ -233,7 +234,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Thick, spongy fermented pancake griddled with caramelized diced red onions, ripe tomatoes, green chillies, and coriander.",
     isJain: false,
-    image: "/assets/food/uttapam-thali.jpg",
+    image: assetUrl("/assets/food/uttapam-thali.jpg"),
     serving: "Served on banana leaf with drumstick sambar and 3 chutneys",
   },
 
@@ -319,7 +320,7 @@ export const menuItems: MenuItem[] = [
       "Soft, lacy fermented rice pancakes with pillowy spongy centers, served with fragrant Kerala coconut milk stew, simmered with farm vegetables and whole spices.",
     isJain: true,
     isChefSpecial: true,
-    image: "/assets/food/grand-feast-spread.jpg",
+    image: assetUrl("/assets/food/grand-feast-spread.jpg"),
     serving: "Served with Bhaji, Appalam & homemade Pickle",
     badge: "Kerala Specialty",
   },
@@ -334,7 +335,7 @@ export const menuItems: MenuItem[] = [
     isJain: true,
     isSignature: true,
     spiciness: "medium",
-    image: "/assets/food/south-indian-thali.webp",
+    image: assetUrl("/assets/food/south-indian-thali.webp"),
     serving: "Served with Bhaji, Appalam & Pickle",
     badge: "Chef Recommended",
   },
@@ -383,7 +384,7 @@ export const menuItems: MenuItem[] = [
       "The ultimate Dakshin dining experience: Malabar Parotta, Medu Vada, Masala Vada, Palya, Avial, Kootu, Sambar, Pepper Rasam, Ghee Rice, Curd, Appalam, Semiya Payasam, and Ghee Pineapple Kesari.",
     isJain: true,
     isSignature: true,
-    image: "/assets/food/royal-sadhya-thali.jpg",
+    image: assetUrl("/assets/food/royal-sadhya-thali.jpg"),
     serving: "Complete banquet served in traditional brass katoris on banana leaf",
     badge: "Grand Thali",
   },
@@ -396,7 +397,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Elaborate 24-item traditional banana leaf spread featuring red matta rice, upperi, sharkara varatti, inji puli, thoran, olan, kalan, avial, sambar, rasam, and twin payasams.",
     isJain: true,
-    image: "/assets/food/onam-sadhya-leaf.webp",
+    image: assetUrl("/assets/food/onam-sadhya-leaf.webp"),
     serving: "Served on fresh plantain leaf during festival days & weekend feasts",
     badge: "Festival Heritage",
   },
@@ -448,7 +449,7 @@ export const menuItems: MenuItem[] = [
       "Tender baby potatoes roasted slow in brass kadai with freshly pounded black pepper, crushed coriander seeds, and fried curry leaves.",
     isJain: false,
     spiciness: "medium",
-    image: "/assets/food/urulai-potato-roast.jpg",
+    image: assetUrl("/assets/food/urulai-potato-roast.jpg"),
     serving: "Served in copper-brass kadai with piping pepper rasam",
   },
 
@@ -503,7 +504,7 @@ export const menuItems: MenuItem[] = [
       "Silken vermicelli simmered slowly in whole milk and cardamom, laden with golden ghee-fried whole cashews and plump raisins.",
     isJain: true,
     isSignature: true,
-    image: "/assets/food/semiya-payasam.jpg",
+    image: assetUrl("/assets/food/semiya-payasam.jpg"),
     serving: "Served warm in traditional brass Uruli",
     badge: "Traditional Classic",
   },
@@ -516,7 +517,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Temple-style sweet harvest rice and yellow moong dal cooked with pure sugarcane jaggery, nutmeg, roasted cashews, and coconut slivers in earthenware matka.",
     isJain: true,
-    image: "/assets/food/sakkarai-pongal.jpg",
+    image: assetUrl("/assets/food/sakkarai-pongal.jpg"),
     serving: "Served warm in earthen clay matka on banana leaf",
   },
   {
@@ -529,7 +530,7 @@ export const menuItems: MenuItem[] = [
       "Glistening, decadent whole-wheat milk halwa simmered with continuous pure desi ghee, crowned with toasted pistachios, almonds, and sun-dried rose petals.",
     isJain: true,
     isChefSpecial: true,
-    image: "/assets/food/ghee-halwa.jpg",
+    image: assetUrl("/assets/food/ghee-halwa.jpg"),
     serving: "Served warm on vintage silver dish",
     badge: "Decadent Ghee",
   },

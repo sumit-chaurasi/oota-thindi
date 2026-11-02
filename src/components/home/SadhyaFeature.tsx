@@ -1,6 +1,7 @@
 import React from "react";
 import { Sparkles, CalendarCheck, MessageSquare } from "lucide-react";
 import { orderingService } from "../../services/orderingService";
+import { assetUrl } from "../../utils/assetUrl";
 
 interface SadhyaFeatureProps {
   onOpenBooking?: () => void;
@@ -15,7 +16,7 @@ export const SadhyaFeature: React.FC<SadhyaFeatureProps> = () => {
             {/* Visual Column */}
             <div className="sadhya-feature-image-wrap">
               <img
-                src="/assets/food/onam-sadhya-leaf.webp"
+                src={assetUrl("/assets/food/onam-sadhya-leaf.webp")}
                 alt="Traditional Banana Leaf Onam Sadhya Feast at The Oota Thindi"
                 width="1360"
                 height="1020"

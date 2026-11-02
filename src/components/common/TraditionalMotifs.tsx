@@ -1,4 +1,5 @@
 import React from "react";
+import { assetUrl } from "../../utils/assetUrl";
 
 export const KolamStar: React.FC<{ className?: string }> = ({ className = "" }) => (
   <span
@@ -33,7 +34,7 @@ export const LogoEmblem: React.FC<{ size?: number; className?: string }> = ({
     }}
   >
     <img
-      src="/assets/brand/logo.jpg"
+      src={assetUrl("/assets/brand/logo.jpg")}
       alt="The Oota Thindi Logo"
       style={{
         width: "100%",

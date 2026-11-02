@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRight, MapPin, Sparkles, ShieldCheck, Utensils } from "lucide-react";
 import { restaurantData } from "../../data/restaurant";
+import { assetSrcSet, assetUrl } from "../../utils/assetUrl";
 
 interface HeroProps {
   onOpenBooking?: () => void;
@@ -11,23 +12,23 @@ export const Hero: React.FC<HeroProps> = () => {
 
   const heroImages = [
     {
-      src: "/assets/food/grand-feast-spread.jpg",
-      srcSet: "/assets/food/grand-feast-spread-400.jpg 400w, /assets/food/grand-feast-spread.jpg 736w",
+      src: assetUrl("/assets/food/grand-feast-spread.jpg"),
+      srcSet: assetSrcSet("/assets/food/grand-feast-spread-400.jpg 400w, /assets/food/grand-feast-spread.jpg 736w"),
       width: 736,
       height: 920,
       title: "Royal Dakshin Feast",
       subtitle: "Authentic Sadhya table spread in our Borivali dining room",
     },
     {
-      src: "/assets/food/benne-dosa.jpg",
-      srcSet: "/assets/food/benne-dosa-400.jpg 400w, /assets/food/benne-dosa.jpg 736w",
+      src: assetUrl("/assets/food/benne-dosa.jpg"),
+      srcSet: assetSrcSet("/assets/food/benne-dosa-400.jpg 400w, /assets/food/benne-dosa.jpg 736w"),
       width: 736,
       height: 920,
       title: "Davangere Benne Dosa",
       subtitle: "Melted butter over crisp golden roast with fresh chutneys",
     },
     {
-      src: "/assets/restaurant/interior-patio.webp",
+      src: assetUrl("/assets/restaurant/interior-patio.webp"),
       width: 1360,
       height: 766,
       title: "The Oota Thindi Patio & Coffee House",

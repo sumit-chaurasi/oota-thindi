@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import { assetUrl } from "../../utils/assetUrl";
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +70,7 @@ export const Navbar: React.FC = () => {
               aria-label="The Oota Thindi Home"
             >
               <img
-                src="/assets/brand/logo-small.jpg"
+                src={assetUrl("/assets/brand/logo-small.jpg")}
                 alt="The Oota Thindi Logo"
                 className="brand-logo-img"
                 width="160"
@@ -141,7 +142,7 @@ export const Navbar: React.FC = () => {
         <div className="mobile-drawer__header">
           <div className="brand-link">
             <img
-              src="/assets/brand/logo-small.jpg"
+              src={assetUrl("/assets/brand/logo-small.jpg")}
               alt="The Oota Thindi"
               className="brand-logo-img"
               width="160"

@@ -1,6 +1,7 @@
 import React from "react";
 import { Coffee, Sun, Compass } from "lucide-react";
 import { SectionHeading } from "../common/SectionHeading";
+import { assetUrl } from "../../utils/assetUrl";
 
 export const AmbienceSection: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const AmbienceSection: React.FC = () => {
           <div className="ambience-gallery-duo">
             <div style={{ position: "relative" }}>
               <img
-                src="/assets/restaurant/interior-patio.webp"
+                src={assetUrl("/assets/restaurant/interior-patio.webp")}
                 alt="Evening dining area with Thindi Coffee House kiosk"
                 loading="lazy"
               />
@@ -45,7 +46,7 @@ export const AmbienceSection: React.FC = () => {
 
             <div style={{ position: "relative" }}>
               <img
-                src="/assets/restaurant/outdoor-daytime.webp"
+                src={assetUrl("/assets/restaurant/outdoor-daytime.webp")}
                 alt="Daytime al fresco dining terrace"
                 loading="lazy"
               />
