@@ -1,0 +1,65 @@
+:root {
+  /* Brand Palette from Authentic Logo */
+  --color-parchment: #F4E9C9;
+  --color-parchment-light: #FBF6E9;
+  --color-cream: #FFF9EC;
+  --color-cream-pure: #FDFBF7;
+  --color-maroon: #922F2B;
+  --color-deep-red: #A92F29;
+  --color-leaf-green: #477B43;
+  --color-deep-green: #285A35;
+  --color-mustard: #C99A38;
+  --color-mustard-light: #DFB256;
+  --color-magenta: #96305E;
+  --color-magenta-light: #B44677;
+  --color-ink: #35251F;
+  --color-ink-muted: #6B5B53;
+  --color-ink-subtle: #98877E;
+
+  /* Glassmorphism Surfaces */
+  --glass-light: rgba(255, 249, 236, 0.72);
+  --glass-light-strong: rgba(255, 249, 236, 0.88);
+  --glass-card: rgba(255, 255, 255, 0.65);
+  --glass-card-hover: rgba(255, 255, 255, 0.82);
+  --glass-dark: rgba(53, 37, 31, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.55);
+  --glass-border-dark: rgba(146, 47, 43, 0.18);
+  --glass-border-gold: rgba(201, 154, 56, 0.40);
+
+  /* Blur & Filters */
+  --glass-blur: blur(16px) saturate(135%);
+  --glass-blur-heavy: blur(24px) saturate(145%);
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 12px;
+  --radius-card: 20px;
+  --radius-panel: 28px;
+  --radius-modal: 32px;
+  --radius-pill: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-subtle: 0 4px 16px rgba(53, 37, 31, 0.05);
+  --shadow-soft: 0 12px 36px rgba(53, 37, 31, 0.08);
+  --shadow-elevated: 0 20px 50px rgba(53, 37, 31, 0.12);
+  --shadow-dramatic: 0 28px 70px rgba(53, 37, 31, 0.18);
+  --shadow-inner-glow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+
+  /* Typography */
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Alex Brush", cursive;
+
+  /* Layout */
+  --max-width: 1280px;
+  --header-height: 80px;
+  --section-pad-y: clamp(64px, 8vw, 112px);
+  --gutter: clamp(16px, 4vw, 36px);
+
+  /* Transitions */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast: 0.2s var(--ease-smooth);
+  --transition-normal: 0.35s var(--ease-smooth);
+  --transition-slow: 0.6s var(--ease-smooth);
+}
