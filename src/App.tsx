@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import React, { useState } from "react";
 import { Navbar } from "./components/layout/Navbar";
 import { Hero } from "./components/home/Hero";
@@ -8,7 +9,7 @@ import { GallerySection } from "./components/gallery/GallerySection";
 import { BookingSection } from "./components/booking/BookingSection";
 import { VisitSection } from "./components/contact/VisitSection";
 import { Footer } from "./components/layout/Footer";
-import "./styles/main.css";
+import "./styles.css";
 
 export default function App() {
   const [selectedMenuCategory, setSelectedMenuCategory] = useState("all");
